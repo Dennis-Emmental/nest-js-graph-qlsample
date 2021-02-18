@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todo {
+  id: Int!
+  title: String!
+}
+
+type Query {
+  list: [Todo!]!
+}
+
+type Mutation {
+  addToto(newTodo: NewTodoInput!): Todo!
+}
+
+input NewTodoInput {
+  title: String!
+}
+
+type Subscription {
+  todoAdded: Todo!
+}
